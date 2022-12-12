@@ -1,19 +1,17 @@
-﻿global using Raylib_cs;
+﻿global using System;
 
-Raylib.InitWindow(800, 600, "ProjectName");
-Raylib.SetTargetFPS(60);
+ToolBox.WriteCentered("Fighting Game!");
+ToolBox.WriteCentered("Press ENTER To Start");
+Console.ReadLine(); Console.Clear();
 
-Character myChar = new Character();
+ToolBox.WriteCentered("Please Name your fighter");
 
-while (!Raylib.WindowShouldClose())
+
+ToolBox.WriteBeginning("");
+ToolBox.WriteEnd("");
+Console.ReadLine();
+
+
+while (true)
 {
-    //LOGIK
-
-    //GRAFIK
-    Raylib.BeginDrawing();
-    Raylib.ClearBackground(Color.WHITE);
-
-    myChar.Draw();
-
-    Raylib.EndDrawing();
 }

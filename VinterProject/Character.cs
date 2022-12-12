@@ -1,13 +1,6 @@
 public class Character
 {
-    private Rectangle rect;
-
-    public Character()
-    {
-        rect = new Rectangle(0, 0, 32, 32);
-    }
-    public void Draw()
-    {
-        Raylib.DrawRectangleRec(rect, Color.GREEN);
-    }
+    public string name;
+    public int HP = 100;
+    public int ATK = 25;
 }
