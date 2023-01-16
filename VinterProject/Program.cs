@@ -1,34 +1,25 @@
 ﻿global using System;
 
-Character Player = new Character();
-
+// Main Menu för spelet
 ToolBox.WriteCentered("Fighting Game!");
 ToolBox.WriteCentered("Press ENTER To Start");
 Console.ReadLine(); Console.Clear();
 
-ToolBox.WriteCentered("Please Name your fighter and press ENTER");
-Player.name = Console.ReadLine();
-Console.Clear();
-NameConfirm();
+
+ToolBox.PickFighter();
 
 
-ToolBox.WriteBeginning("");
-ToolBox.WriteEnd("");
+// Prompt för att namnge din karaktär, samt en confirmation för namnet
+ToolBox.NameConfirm();
+
+
+
+while (Player.HP <= 0 || Enemy.HP <= 0)
+{
+
+}
+
+
+
+Console.WriteLine("Game Over");
 Console.ReadLine();
-
-
-while (true)
-{
-}
-
-
-
-
-
-
-
-void NameConfirm()
-{
-    ToolBox.WriteCentered($"Do you want to be named {Player.name}");
-    Console.ReadLine();
-}
