@@ -5,14 +5,15 @@ ToolBox.WriteCentered("Fighting Game!");
 ToolBox.WriteCentered("Press ENTER To Start");
 Console.ReadLine(); Console.Clear();
 
-
-ToolBox.PickFighter();
-
+Character Player = new Character();
+Character Enemy = new Character();
 
 // Prompt för att namnge din karaktär, samt en confirmation för namnet
-ToolBox.NameConfirm();
+ToolBox.NameConfirm(Player.name);
 
+Console.WriteLine($"{Player.name}");
 
+//Console.WriteLine($"{Player.name}");
 
 while (Player.HP <= 0 || Enemy.HP <= 0)
 {

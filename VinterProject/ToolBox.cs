@@ -37,7 +37,7 @@ public class ToolBox
         }
         Console.WriteLine(text);
     }
-    public static void NameConfirm()
+    public static void NameConfirm(string name)
     {
         bool confirmed = false;
         bool invalidAnswer = false;
@@ -46,7 +46,7 @@ public class ToolBox
         while (confirmed == false)
         {
             ToolBox.WriteCentered("Please Name your fighter and press ENTER");
-            string name = Console.ReadLine();
+            name = Console.ReadLine();
             Console.Clear();
             invalidAnswer = false;
 
@@ -69,35 +69,6 @@ public class ToolBox
                     Console.Clear();
                 }
                 else { Console.Clear(); }
-            }
-        }
-    }
-    public static void PickFighter()
-    {
-        bool invalidAnswer = false;
-        while (invalidAnswer == false)
-        {
-            ToolBox.WriteCentered("Please pick your fighter with 1 or 2");
-            ToolBox.WriteBeginning("Fighter1 HP : 100");
-            ToolBox.WriteBeginning("Fighter1 ATK : 50");
-            Console.WriteLine();
-            ToolBox.WriteBeginning("Fighter2 HP : 200");
-            ToolBox.WriteBeginning("Fighter2 ATK : 10");
-
-            string answer = Console.ReadLine();
-            Console.Clear();
-
-            if (answer == "1")
-            {
-                Fighter1 Player = new Fighter1();
-                Fighter2 Enemy = new Fighter2();
-                invalidAnswer = true;
-            }
-            if (answer == "2")
-            {
-                Fighter2 Player = new Fighter2();
-                Fighter1 Enemy = new Fighter1();
-                invalidAnswer = true;
             }
         }
     }
