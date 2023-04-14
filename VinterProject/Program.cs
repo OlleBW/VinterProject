@@ -13,10 +13,11 @@ Character Enemy = new Character();
 ToolBox.NameConfirm(Player.name);
 
 
+
+
+
 while (Player.HP >= 0 || Enemy.HP >= 0)
 {
-    // Player attacks (Creates random based of ATK)
-    // Enemy loses HP
 
     //Enemy attacks based off ATK
     //Player loses HP
