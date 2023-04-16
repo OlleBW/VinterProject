@@ -1,5 +1,5 @@
 using System;
-public class FighterType2 : Character
+public class Berserk : Character
 {
     public int ATK = 75;
     public int HP = 25;
