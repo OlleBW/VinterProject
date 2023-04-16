@@ -23,17 +23,15 @@ while (ValidAnswer == false)
         Berserk Player = new Berserk();
         ValidAnswer = true;
     }
+    else
+    {
+        Console.WriteLine();
+    }
 }
 
-// Prompt för att namnge din karaktär, samt en confirmation för namnet
-ToolBox.NameConfirm(Player.name);
-
-
-while (Player.HP >= 0 || Enemy.HP >= 0)
+while(true)
 {
-
-    //Enemy attacks based off ATK
-    //Player loses HP
+    
 }
 
 if (Player.HP <= 0)
