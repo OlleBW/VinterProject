@@ -1,6 +1,10 @@
 using System;
+
 public class Berserk : Character
 {
-    public int ATK = 75;
-    public int HP = 25;
+    public Berserk()
+    {
+        HP = 25;
+        ATK = 75;
+    }
 }
