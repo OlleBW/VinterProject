@@ -25,20 +25,11 @@ while (ValidAnswer == false)
     }
     else
     {
-        Console.WriteLine();
+        Console.Clear();
     }
 }
 
 while(true)
 {
     
-}
-
-if (Player.HP <= 0)
-{
-    ToolBox.Lost();
-}
-if (Enemy.HP <= 0)
-{
-    ToolBox.Won();
 }
