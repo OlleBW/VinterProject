@@ -6,8 +6,10 @@ Console.WriteLine("Fighting Game!");
 Console.WriteLine("Press ENTER To Start");
 Console.ReadLine(); Console.Clear();
 
-Character Player = new Character();
+
 Character Enemy = new Character();
+
+FighterType1 Player = new FighterType1();
 
 // Prompt för att namnge din karaktär, samt en confirmation för namnet
 ToolBox.NameConfirm(Player.name);

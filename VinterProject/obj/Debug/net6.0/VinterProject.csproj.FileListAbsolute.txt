@@ -19,3 +19,11 @@ C:\Users\olle.brinkwennberg\Desktop\Prog2\VinterProject\VinterProject\obj\Debug\
 C:\Users\olle.brinkwennberg\Desktop\Prog2\VinterProject\VinterProject\obj\Debug\net6.0\VinterProject.pdb
 C:\Users\olle.brinkwennberg\Desktop\Prog2\VinterProject\VinterProject\obj\Debug\net6.0\VinterProject.genruntimeconfig.cache
 C:\Users\olle.brinkwennberg\Desktop\Prog2\VinterProject\VinterProject\obj\Debug\net6.0\ref\VinterProject.dll
+C:\Users\ollew\Documents\GitHub\VinterProject\VinterProject\obj\Debug\net6.0\VinterProject.csproj.AssemblyReference.cache
+C:\Users\ollew\Documents\GitHub\VinterProject\VinterProject\obj\Debug\net6.0\VinterProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ollew\Documents\GitHub\VinterProject\VinterProject\obj\Debug\net6.0\VinterProject.AssemblyInfoInputs.cache
+C:\Users\ollew\Documents\GitHub\VinterProject\VinterProject\obj\Debug\net6.0\VinterProject.AssemblyInfo.cs
+C:\Users\ollew\Documents\GitHub\VinterProject\VinterProject\obj\Debug\net6.0\VinterProject.csproj.CoreCompileInputs.cache
+C:\Users\ollew\Documents\GitHub\VinterProject\VinterProject\obj\Debug\net6.0\VinterProject.dll
+C:\Users\ollew\Documents\GitHub\VinterProject\VinterProject\obj\Debug\net6.0\refint\VinterProject.dll
+C:\Users\ollew\Documents\GitHub\VinterProject\VinterProject\obj\Debug\net6.0\VinterProject.pdb
