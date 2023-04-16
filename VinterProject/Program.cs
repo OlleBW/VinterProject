@@ -6,7 +6,7 @@ Console.WriteLine("Fighting Game!");
 Console.WriteLine("Press ENTER To Start");
 Console.ReadLine(); Console.Clear();
 
-bool ValidAnswer = false:
+bool ValidAnswer = false;
 while (ValidAnswer == false)
 {
     Console.WriteLine("Please pick your fightertype");
