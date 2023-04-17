@@ -4,6 +4,26 @@ public class Character
     public int ATK;
     public int HP;
 
+    public static Character rndmEnemy()
+    {
+        Random generator = new Random();
+        int n = generator.Next(2);
+        if (n == 0)
+        {
+            Berserk Enemy = new Berserk();
+            return Enemy;
+        }
+        if (n == 1)
+        {
+            Tank Enemy = new Tank();
+            return Enemy;
+        }
+        else
+        {
+            Console.WriteLine("error stupid");
+        }
+        return new Character();
+    }
     public static Character pickChar()
     {
         bool ValidAnswer = false;
