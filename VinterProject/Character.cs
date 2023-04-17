@@ -4,7 +4,7 @@ public class Character
     public int ATK;
     public int HP;
 
-    public static void pickChar()
+    public static Character pickChar()
     {
         bool ValidAnswer = false;
         while (ValidAnswer == false)
@@ -17,17 +17,22 @@ public class Character
             {
                 ValidAnswer = true;
                 Tank Player = new Tank();
+
+                return Player;
             }
             if (answer == "2")
             {
                 ValidAnswer = true;
                 Berserk Player = new Berserk();
+
+                return Player;
             }
             else
             {
                 Console.Clear();
             }
         }
+        return new Character();
     }
     public static void setName()
     {

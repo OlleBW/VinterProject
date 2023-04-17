@@ -6,6 +6,6 @@ Console.WriteLine("Fighting Game!");
 Console.WriteLine("Press ENTER To Start");
 Console.ReadLine(); Console.Clear();
 
-
-Character.pickChar();
+Character Player = Character.pickChar();
 Character.setName();
+
