@@ -54,9 +54,8 @@ public class Character
         }
         return new Character();
     }
-    public static void setName()
+    public void Attack()
     {
-        Console.WriteLine("Please name your character");
-        string? name = Console.ReadLine();
+
     }
 }
