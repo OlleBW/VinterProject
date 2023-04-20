@@ -63,13 +63,14 @@ public class Character
     }
     public void Attack()
     {
+
         Random generator = new Random();
         int Dmg = generator.Next(ATK);
 
-        Console.Clear();
-    }
-    public void DmgTaken()
-    {
+        Console.WriteLine($"You attack your opponent and deal {Dmg} damage.");
+        Console.WriteLine("Press ENTER to continue");
+        Console.ReadLine();
 
+        Console.Clear();
     }
 }
