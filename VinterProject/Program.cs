@@ -37,11 +37,6 @@ while (Player.HP >= 0 || Enemy.HP >= 0)
             Console.WriteLine("Press ENTER to continue");
             Console.ReadLine();
         }
-        else
-        {
-            Player.HP = 100;
-            Enemy.HP = 0;
-        }
     }
     if (answer == "2")
     {
@@ -51,12 +46,10 @@ while (Player.HP >= 0 || Enemy.HP >= 0)
 }
 if (Player.HP <= 0)
 {
-    Enemy.HP = 100;
     ToolBox.Lost();
 }
 else if (Enemy.HP <= 0)
 {
-    Player.HP = 100;
     ToolBox.Won();
 }
 else if (Player.HP <= 0 && Enemy.HP <= 0)
