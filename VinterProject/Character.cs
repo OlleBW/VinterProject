@@ -35,6 +35,7 @@ public class Character
             string? answer = Console.ReadLine();
             if (answer == "1")
             {
+                Console.Clear();
                 ValidAnswer = true;
                 Tank Player = new Tank();
 
@@ -42,6 +43,7 @@ public class Character
             }
             if (answer == "2")
             {
+                Console.Clear();
                 ValidAnswer = true;
                 Berserk Player = new Berserk();
 
@@ -54,7 +56,19 @@ public class Character
         }
         return new Character();
     }
+
+    public void Defend()
+    {
+
+    }
     public void Attack()
+    {
+        Random generator = new Random();
+        int Dmg = generator.Next(ATK);
+
+        Console.Clear();
+    }
+    public void DmgTaken()
     {
 
     }
