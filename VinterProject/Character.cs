@@ -61,12 +61,12 @@ public class Character
     {
 
     }
-    public void Attack()
+    public void Attack(Character target)
     {
 
         Random generator = new Random();
         int Dmg = generator.Next(ATK);
-
+        target.HP -= Dmg;
         Console.WriteLine($"You attack your opponent and deal {Dmg} damage.");
         Console.WriteLine("Press ENTER to continue");
         Console.ReadLine();
