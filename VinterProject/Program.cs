@@ -1,4 +1,5 @@
 ﻿global using System;
+using System.Collections.Generic;
 
 // Main Menu för spelet
 
@@ -6,7 +7,7 @@ Console.WriteLine("Fighting Game!");
 Console.WriteLine("Press ENTER To Start");
 Console.ReadLine(); Console.Clear();
 
-List<string> Names = new List<string>(){};
+List<string> Names = new List<string>();
 
 Character Enemy = Character.rndmEnemy();
 Character Player = Character.pickChar();
