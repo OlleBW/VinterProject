@@ -18,10 +18,6 @@ public class Character
             Tank Enemy = new Tank();
             return Enemy;
         }
-        else
-        {
-            Console.WriteLine("error stupid");
-        }
         return new Character();
     }
     public static Character pickChar()

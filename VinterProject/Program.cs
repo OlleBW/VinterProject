@@ -6,13 +6,24 @@ Console.WriteLine("Fighting Game!");
 Console.WriteLine("Press ENTER To Start");
 Console.ReadLine(); Console.Clear();
 
+List<string> Names = new List<string>(){};
+
 Character Enemy = Character.rndmEnemy();
 Character Player = Character.pickChar();
 
-Console.WriteLine("Please name your character");
+Console.WriteLine("Please name your Character");
 Player.name = Console.ReadLine();
+Names.add($"{Player.name}");
 Console.Clear();
 
+Console.WriteLine("Please name your Enemy");
+Enemy.name = Console.ReadLine();
+Names.add($"{Enemy.name}");
+Console.Clear();
+
+
+
+// Loop för fighting sekvensen av spelet
 while (Player.HP >= 0 || Enemy.HP >= 0)
 {
     Console.WriteLine($"{Player.name} HP: {Player.HP} Enemy HP: {Enemy.HP}");
@@ -40,9 +51,16 @@ while (Player.HP >= 0 || Enemy.HP >= 0)
     }
     if (answer == "2")
     {
+        Console.Clear();
+        Console.WriteLine($"{Player.name} HP: {Player.HP} Enemy HP: {Enemy.HP}");
+        Console.WriteLine("This Skill is a work in progress!");
+        Player.Attack(Enemy);
+        Console.WriteLine("You Attack your opponent instead");
+        Console.WriteLine("Press ENTER to continue");
+        Console.ReadLine();
 
     }
-    else { Console.Clear(); }
+    else { Console.Clear(); Console.WriteLine("You did not follow the instructions correctly"); }
 }
 if (Player.HP <= 0)
 {
