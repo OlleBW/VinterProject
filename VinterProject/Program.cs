@@ -1,5 +1,5 @@
 ﻿global using System;
-using System.Collections.Generic;
+global using System.Collections.Generic;
 
 // Main Menu för spelet
 
@@ -14,12 +14,12 @@ Character Player = Character.pickChar();
 
 Console.WriteLine("Please name your Character");
 Player.name = Console.ReadLine();
-Names.add($"{Player.name}");
+Names.Add($"{Player.name}");
 Console.Clear();
 
 Console.WriteLine("Please name your Enemy");
 Enemy.name = Console.ReadLine();
-Names.add($"{Enemy.name}");
+Names.Add($"{Enemy.name}");
 Console.Clear();
 
 
@@ -27,7 +27,7 @@ Console.Clear();
 // Loop för fighting sekvensen av spelet
 while (Player.HP >= 0 || Enemy.HP >= 0)
 {
-    Console.WriteLine($"{Player.name} HP: {Player.HP} Enemy HP: {Enemy.HP}");
+    Console.WriteLine($"{Names[0]} HP: {Player.HP} {Names[1]} HP: {Enemy.HP}");
     Console.WriteLine("Choose what to do this turn:");
     Console.WriteLine("1. Attack");
     Console.WriteLine("2. Guard");
@@ -35,7 +35,7 @@ while (Player.HP >= 0 || Enemy.HP >= 0)
     if (answer == "1")
     {
         Console.Clear();
-        Console.WriteLine($"{Player.name} HP: {Player.HP} Enemy HP: {Enemy.HP}");
+        Console.WriteLine($"{Names[0]} HP: {Player.HP} {Names[1]} HP: {Enemy.HP}");
         Player.Attack(Enemy);
         Console.WriteLine($"You attack your opponent and deal some damage.");
         Console.WriteLine("Press ENTER to continue");
@@ -43,7 +43,7 @@ while (Player.HP >= 0 || Enemy.HP >= 0)
         if (Enemy.HP > 0)
         {
             Console.Clear();
-            Console.WriteLine($"{Player.name} HP: {Player.HP} Enemy HP: {Enemy.HP}");
+            Console.WriteLine($"{Names[0]} HP: {Player.HP} {Names[1]} HP: {Enemy.HP}");
             Enemy.Attack(Player);
             Console.WriteLine($"Your enemy attacks you and deals some damage.");
             Console.WriteLine("Press ENTER to continue");
@@ -53,7 +53,7 @@ while (Player.HP >= 0 || Enemy.HP >= 0)
     if (answer == "2")
     {
         Console.Clear();
-        Console.WriteLine($"{Player.name} HP: {Player.HP} Enemy HP: {Enemy.HP}");
+        Console.WriteLine($"{Names[0]} HP: {Player.HP} {Names[1]} HP: {Enemy.HP}");
         Console.WriteLine("This Skill is a work in progress!");
         Player.Attack(Enemy);
         Console.WriteLine("You Attack your opponent instead");
