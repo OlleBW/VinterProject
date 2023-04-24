@@ -50,17 +50,10 @@ while (Player.HP >= 0 || Enemy.HP >= 0)
             Console.ReadLine();
         }
     }
-    if (answer == "2")
-    {
-        Console.Clear();
-        Console.WriteLine($"{Names[0]} HP: {Player.HP} {Names[1]} HP: {Enemy.HP}");
-        Console.WriteLine("This Skill is a work in progress!");
-        Player.Attack(Enemy);
-        Console.WriteLine("You Attack your opponent instead");
-        Console.WriteLine("Press ENTER to continue");
-        Console.ReadLine();
-
-    }
+    //if (answer == "2")
+    //{
+    // Player.Guard();
+    //}
     else { Console.Clear(); Console.WriteLine("You did not follow the instructions correctly"); }
 }
 if (Player.HP <= 0)
